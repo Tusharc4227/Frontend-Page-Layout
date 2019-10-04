@@ -1,0 +1,176 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <link href="./css/menu.css" rel="stylesheet">
+	<script src="./js/dash.js"></script>
+</head>
+<body>
+<div id="throbber" style="display:none; min-height:120px;"></div>
+<div id="noty-holder"></div>
+<div id="wrapper">
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+           
+        </div>
+        <!-- Top Menu Items -->
+        <ul class="nav navbar-right top-nav">
+		 
+            <li><a href="#" data-placement="bottom" data-toggle="tooltip" href="#" data-original-title="Stats"><i class="fa fa-bar-chart-o"></i>
+                </a>
+            </li>            
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin User <b class="fa fa-angle-down"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"><i class="fa fa-fw fa-user"></i> Edit Profile</a></li>
+                    <li><a href="#"><i class="fa fa-fw fa-cog"></i> Change Password</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#"><i class="fa fa-fw fa-power-off"></i> Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+			<a class="navbar-brand" href="http://cijulenlinea.ucr.ac.cr/dev-users/">
+                <img src="http://placehold.it/200x50&text=LOGO" alt="LOGO">
+            </a>
+                <li style="padding-top:72px;">
+                    <a href="#" data-toggle="collapse" data-target="#submenu-1">SKATEBOARD  <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <ul id="submenu-1" class="collapse in">
+                        <li><a href="#"> Desk</a></li>
+                        <li class="active"><a href="#"> Complete dashboard</a></li>
+                        <li><a href="#"> Build your own</a></li>
+						<li><a href="#"> Trucks</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-2"> LONGBOARRDS  <i class="fa fa-fw fa-angle-down pull-right"></i></a>
+                    <!-- <ul id="submenu-2" class="collapse"> -->
+                        <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.1</a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.2</a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-angle-double-right"></i> SUBMENU 2.3</a></li> -->
+                    <!-- </ul> -->
+                </li>
+                <li>
+                    <a href="investigaciones/favoritas"> ASCESSORIES</a>
+                </li>
+                <li>
+                    <a href="sugerencias"> BRANDS </a>
+                </li>
+               
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="row" id="main" >
+                <div class="col-sm-12">
+				     <div class="col-sm-4 first">
+					    <div class="col-sm-4 scate"><img src="./images/scate.png"></div>
+						<div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Almost Wonder Women<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $24.99
+                            </div>
+						</div>
+                     </div>
+                     <div class="col-sm-4 first">
+                        <div class="col-sm-4 scate"><img src="./images/Scate1.jpg"></div>
+                        <div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Some Other text 1<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $124.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 first">
+                        <div class="col-sm-4 scate"><img style="width: 95px !important;" src="./images/scate2.jpg"></div>
+                        <div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Some Other text 2<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $241.99
+                            </div>
+                        </div>
+                    </div>	 
+                </div>
+                <div class="col-sm-12">
+				     <div class="col-sm-4 first">
+					    <div class="col-sm-4 scate"><img src="./images/scate3.jpg"></div>
+						<div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Some Other text 3<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $204.99
+                            </div>
+						</div>
+                     </div>
+                     <div class="col-sm-4 first">
+                        <div class="col-sm-4 scate"><img src="./images/scate4.jpg"></div>
+                        <div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Some Other text 4<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $29.99
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 first">
+                        <div class="col-sm-4 scate"><img src="./images/scate5.jpg"></div>
+                        <div class="col-sm-8 des">
+                            <div class="col-sm-12">
+                                Some Other text 5<br>
+                                Color Mid<br>
+                                Complete<br>
+                                70*29
+                            </div>
+                            <div  class="col-sm-12 colorClass">
+                                $201.99
+                            </div>
+                    </div>
+                    </div>	 
+				</div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /#page-wrapper -->
+</div><!-- /#wrapper -->
+</body>
+</html>
